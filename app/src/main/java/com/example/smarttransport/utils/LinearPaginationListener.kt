@@ -1,4 +1,4 @@
-package com.homecookapp.user.utils
+package com.example.smarttransport.utils
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

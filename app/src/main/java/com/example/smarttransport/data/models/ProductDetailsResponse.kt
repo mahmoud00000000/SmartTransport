@@ -1,4 +1,4 @@
-package com.example.groovyshopping.data.models
+package com.example.smarttransport.data.models
 
 import com.google.gson.annotations.SerializedName
 

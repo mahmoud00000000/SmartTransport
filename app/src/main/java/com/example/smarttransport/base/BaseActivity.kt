@@ -1,4 +1,4 @@
-package com.example.groovyshopping.base
+package com.example.smarttransport.base
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -14,22 +14,19 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.Observer
-import com.homecookapp.user.utils.AppManger
-import com.homecookapp.user.utils.MyUtils.myToast
-import com.example.groovyshopping.base.BaseViewModel
+import com.example.smarttransport.utils.AppManger
+import com.example.smarttransport.utils.MyUtils.myToast
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import kotlin.reflect.KClass
-import com.example.groovyshopping.R
-import com.example.groovyshopping.databinding.DialogConfirmBinding
-import com.example.groovyshopping.di.modules.BASE_URL
-import com.example.groovyshopping.ui.activities.LoginActivity
+import com.example.smarttransport.di.modules.BASE_URL
 import com.google.gson.Gson
-import com.example.groovyshopping.user.application.Application
-import com.example.groovyshopping.screens.splash.SplashActivity
-import com.example.groovyshopping.user.data.remote.DefaultDataModel
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkStatus
-import com.homecookapp.user.utils.openActivity
+import com.example.smarttransport.user.application.Application
+//import com.example.smarttransport.screens.splash.SplashActivity
+import com.example.smarttransport.user.data.remote.DefaultDataModel
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkStatus
+import com.example.smarttransport.utils.openActivity
+import com.homecookapp.user.databinding.DialogConfirmBinding
 import retrofit2.Response
 import java.util.Locale
 
@@ -43,7 +40,10 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : AppCompatA
 
     val viewModel: V by lazy { getViewModel(null,viewModelClass()) }
 
-    val sharedPreferences: SharedPreferences by inject()
+    val sharedPreferences: SharedPreferences by lazy {
+        org.koin.java.KoinJavaComponent.get(SharedPreferences::class.java)
+    }
+
 
     var dialog: AlertDialog? = null
 
@@ -98,7 +98,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : AppCompatA
 
     override fun onBackPressed() {
         super.onBackPressed()
-        overridePendingTransition(R.anim.no_change, R.anim.slide_down)
+//        overridePendingTransition(R.anim.no_change, R.anim.slide_down)
 
     }
 
@@ -130,7 +130,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : AppCompatA
         }
         sharedPreferences.edit().putString("lang", Application.language).apply()
         checkLang()
-        openActivity(SplashActivity::class.java)
+//        openActivity(SplashActivity::class.java)
         finishAffinity()
     }
 
@@ -177,12 +177,12 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : AppCompatA
     override fun onNotAuthorized(exception: String?) {
         var dialog: android.app.AlertDialog? = null
         val view = DialogConfirmBinding.inflate(LayoutInflater.from(this))
-        view.txtMassage.text = resources.getString(R.string.pleseLogin)
+//        view.txtMassage.text = resources.getString(R.string.pleseLogin)
         view.btnOk.setOnClickListener {
             if (dialog?.isShowing == true) {
                 dialog?.dismiss()
             }
-            openActivity(LoginActivity::class.java)
+//            openActivity(LoginActivity::class.java)
         }
         view.btnCancel.setOnClickListener {
             dialog?.dismiss()
@@ -247,15 +247,15 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : AppCompatA
 
     fun toggleLoadingDialog(show: Boolean) {
 
-        if (dialog == null) {
-            dialog = AlertDialog.Builder(this)
-                .setView(R.layout.progress)
-                .setCancelable(false)
-                .create()
-
-            dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-        }
+//        if (dialog == null) {
+//            dialog = AlertDialog.Builder(this)
+//                .setView(R.layout.progress)
+//                .setCancelable(false)
+//                .create()
+//
+//            dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
+//
+//        }
 
         if (!show)
             dialog?.dismiss()

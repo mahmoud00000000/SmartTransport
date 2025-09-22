@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.FCM
+package com.example.smarttransport.user.FCM
 
 data class ExtraPayLoad(
     var image: String?,

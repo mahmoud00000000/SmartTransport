@@ -1,11 +1,11 @@
-package com.example.groovyshopping.user.application
+package com.example.smarttransport.user.application
 
 import android.app.Application
 import android.content.SharedPreferences
-import com.example.groovyshopping.di.modules.classesModule
-import com.example.groovyshopping.di.modules.networkModule
-import com.example.groovyshopping.di.modules.preferencesModule
-import com.example.groovyshopping.di.modules.viewModelModule
+import com.example.smarttransport.di.modules.classesModule
+import com.example.smarttransport.di.modules.networkModule
+import com.example.smarttransport.di.modules.preferencesModule
+import com.example.smarttransport.di.modules.viewModelModule
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -19,31 +19,30 @@ class Application : Application() {
         var language: String = "ar"
         var appTheme: String = "light"
     }
-    val sharedPreferences: SharedPreferences by inject()
 
     override fun onCreate() {
         super.onCreate()
 
-        // AppsFlyer KEY TO Be Changed
-//        AppsFlyerLib.getInstance().init("LeJYDPUMhxPnUuwtBP4UAJ", null, this)
-//        AppsFlyerLib.getInstance().start(this)
-//        AppsFlyerLib.getInstance().setDebugLog(true)
-
+        // Start Koin
         startKoin {
             androidLogger(Level.NONE)
             androidContext(this@Application)
             modules(networkModule, preferencesModule, viewModelModule, classesModule)
         }
+
+        // بعد ما Koin اشتغل، تقدر تجيب SharedPreferences
+        val sharedPreferences: SharedPreferences = org.koin.java.KoinJavaComponent.get(SharedPreferences::class.java)
+
         language = if (sharedPreferences.getString("lang", "ar") == "en") {
             "en"
         } else {
             "ar"
         }
+
         appTheme = if (sharedPreferences.getString("theme", "light") == "light") {
             "light"
         } else {
             "dark"
         }
     }
-
 }

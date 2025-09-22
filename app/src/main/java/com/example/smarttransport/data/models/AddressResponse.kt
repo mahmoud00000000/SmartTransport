@@ -1,9 +1,9 @@
-package com.example.groovyshopping.user.data.models
+package com.example.smarttransport.user.data.models
 
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import com.example.groovyshopping.user.data.models.CountryDataModel
+import com.example.smarttransport.user.data.models.CountryDataModel
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

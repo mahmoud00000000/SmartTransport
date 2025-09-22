@@ -1,18 +1,18 @@
-package com.example.groovyshopping.di.modules
+package com.example.smarttransport.di.modules
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Build
 import android.provider.Settings
 import android.util.Log
-import com.example.groovyshopping.data.remote.RetrofitApi
-import com.example.groovyshopping.user.application.Application
+import com.example.smarttransport.data.remote.RetrofitApi
+import com.example.smarttransport.user.application.Application
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 //import com.homecookapp.user.screens.hyperPayment.HyperPayCredential.getPaymentTokenCredential
-import com.homecookapp.user.utils.AppManger
+import com.example.smarttransport.utils.AppManger
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory.Companion.invoke
 import okhttp3.HttpUrl

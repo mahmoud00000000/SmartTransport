@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.base
+package com.example.smarttransport.user.base
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -10,16 +10,16 @@ import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import retrofit2.Response
-import com.example.groovyshopping.databinding.DialogConfirmBinding
-import com.example.groovyshopping.di.modules.BASE_URL
+import com.example.smarttransport.di.modules.BASE_URL
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.gson.Gson
-import com.example.groovyshopping.R
-import com.homecookapp.user.utils.AppManger
-import com.homecookapp.user.utils.myToast
-import com.example.groovyshopping.base.BaseViewModel
-import com.example.groovyshopping.user.data.remote.DefaultDataModel
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkStatus
+import com.homecookapp.user.R
+import com.example.smarttransport.utils.AppManger
+import com.example.smarttransport.utils.myToast
+import com.example.smarttransport.base.BaseViewModel
+import com.example.smarttransport.user.data.remote.DefaultDataModel
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkStatus
+import com.homecookapp.user.databinding.DialogConfirmBinding
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import kotlin.reflect.KClass
@@ -69,17 +69,17 @@ abstract class BaseBottomSheetDialog <T : ViewDataBinding, V : BaseViewModel> : 
 
     fun toggleLoadingDialog(show: Boolean) {
 
-        if (dialog == null) {
-            activity?.apply {
-                dialog = AlertDialog.Builder(this)
-                    .setView(R.layout.progress)
-                    .setCancelable(false)
-                    .create()
-
-                dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-            }
-        }
+//        if (dialog == null) {
+//            activity?.apply {
+//                dialog = AlertDialog.Builder(this)
+//                    .setView(R.layout.progress)
+//                    .setCancelable(false)
+//                    .create()
+//
+//                dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
+//
+//            }
+//        }
 
         if (!show) {
             dialog?.dismiss()
@@ -143,7 +143,7 @@ abstract class BaseBottomSheetDialog <T : ViewDataBinding, V : BaseViewModel> : 
     override fun onNotAuthorized(exception: String?) {
         var dialog: android.app.AlertDialog? = null
         val view = DialogConfirmBinding.inflate(LayoutInflater.from(activity))
-        view.txtMassage.text = resources.getString(R.string.pleseLogin)
+//        view.txtMassage.text = resources.getString(R.string.pleseLogin)
         view.btnOk.setOnClickListener {
             if (dialog?.isShowing == true) {
                 dialog?.dismiss()

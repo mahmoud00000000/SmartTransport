@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.screens.splash
+package com.example.smarttransport.user.screens.splash
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

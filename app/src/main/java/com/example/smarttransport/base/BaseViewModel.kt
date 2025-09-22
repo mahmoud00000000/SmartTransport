@@ -1,18 +1,18 @@
-package com.example.groovyshopping.base
+package com.example.smarttransport.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.groovyshopping.data.models.MoreDataModel
-import com.example.groovyshopping.data.models.MorePagesData
-import com.example.groovyshopping.data.models.PageDataModel
+import com.example.smarttransport.data.models.MoreDataModel
+import com.example.smarttransport.data.models.MorePagesData
+import com.example.smarttransport.data.models.PageDataModel
 import com.google.gson.JsonObject
-import com.example.groovyshopping.user.data.models.PaymentMethodDataModel
-import com.example.groovyshopping.user.data.models.WalletDataModel
-import com.example.groovyshopping.user.data.remote.DefaultData
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkStatus
-import com.example.groovyshopping.user.data.reporsitory.MainRepository
-import com.homecookapp.user.utils.AppManger
+import com.example.smarttransport.user.data.models.PaymentMethodDataModel
+import com.example.smarttransport.user.data.models.WalletDataModel
+import com.example.smarttransport.user.data.remote.DefaultData
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkStatus
+import com.example.smarttransport.user.data.reporsitory.MainRepository
+import com.example.smarttransport.utils.AppManger
 import kotlinx.coroutines.launch
 
 

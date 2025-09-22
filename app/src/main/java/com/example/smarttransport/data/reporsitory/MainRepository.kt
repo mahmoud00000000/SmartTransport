@@ -1,9 +1,9 @@
-package com.example.groovyshopping.user.data.reporsitory
+package com.example.smarttransport.user.data.reporsitory
 
 import com.google.gson.JsonObject
-import com.example.groovyshopping.data.remote.RetrofitApi
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkResult
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkStatus
+import com.example.smarttransport.data.remote.RetrofitApi
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkResult
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkStatus
 
 
 //import com.homecookapp.user.screens.hyperPayment.HyperPayCredential.getPaymentTokenCredential

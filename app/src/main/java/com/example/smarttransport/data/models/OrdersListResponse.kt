@@ -1,7 +1,7 @@
-package com.example.groovyshopping.user.data.models
+package com.example.smarttransport.user.data.models
 
 import com.google.gson.annotations.SerializedName
-import com.example.groovyshopping.user.data.models.UserDataModel
+import com.example.smarttransport.user.data.models.UserDataModel
 
 data class OrdersListResponse(
 

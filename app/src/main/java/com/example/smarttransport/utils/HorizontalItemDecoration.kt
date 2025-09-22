@@ -1,4 +1,4 @@
-package com.example.groovyshopping.utils
+package com.example.smarttransport.utils
 
 import android.graphics.Rect
 import android.view.View

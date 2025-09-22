@@ -1,4 +1,4 @@
-package com.example.groovyshopping.screens.splash
+package com.example.smarttransport.screens.splash
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -8,11 +8,11 @@ import android.os.Handler
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import com.google.firebase.messaging.FirebaseMessaging
-import com.example.groovyshopping.R
-import com.example.groovyshopping.base.BaseActivity
-import com.example.groovyshopping.databinding.ActivitySplashBinding
-import com.example.groovyshopping.ui.viewmodels.AuthViewModel
-import com.google.firebase.auth.FirebaseAuth
+import com.homecookapp.user.R
+import com.example.smarttransport.base.BaseActivity
+import com.homecookapp.user.databinding.ActivitySplashBinding
+import com.example.smarttransport.ui.viewmodel.AuthViewModel
+//import com.google.firebase.auth.FirebaseAuth
 import kotlin.reflect.KClass
 
 
@@ -22,7 +22,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, AuthViewModel>() {
     val PERMISSION_REQUEST_CODE: Int = 112
     override fun resourceId(): Int = R.layout.activity_splash
 
-    val auth: FirebaseAuth = FirebaseAuth.getInstance()
+//    val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
 
     override fun viewModelClass(): KClass<AuthViewModel> = AuthViewModel::class

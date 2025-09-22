@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.FCM
+package com.example.smarttransport.user.FCM
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -15,7 +15,7 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.example.groovyshopping.R
+import com.homecookapp.user.R
 import java.io.IOException
 import java.io.InputStream
 import java.net.HttpURLConnection

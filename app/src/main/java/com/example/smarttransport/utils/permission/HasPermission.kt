@@ -1,4 +1,4 @@
-package com.homecookapp.user.utils.permission
+package com.example.smarttransport.utils.permission
 
 import android.Manifest
 import android.content.Context

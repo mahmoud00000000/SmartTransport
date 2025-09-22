@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653777383327",
+    "project_id": "smart-transport-f1d08",
+    "storage_bucket": "smart-transport-f1d08.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653777383327:android:1c07da32b18f50a16617aa",
+        "android_client_info": {
+          "package_name": "com.homecookapp.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQtOa6fffQE-ohF-fLZ9B65MCNxUsXMAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

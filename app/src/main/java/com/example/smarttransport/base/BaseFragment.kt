@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.base
+package com.example.smarttransport.user.base
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -11,12 +11,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.example.groovyshopping.base.BaseViewModel
-import com.example.groovyshopping.R
-import com.example.groovyshopping.base.BaseActivity
-import com.example.groovyshopping.user.data.remote.networkHandling.NetworkStatus
-import com.homecookapp.user.utils.AppManger
-import com.homecookapp.user.utils.myToast
+import com.example.smarttransport.base.BaseViewModel
+import com.homecookapp.user.R
+import com.example.smarttransport.base.BaseActivity
+import com.example.smarttransport.user.data.remote.networkHandling.NetworkStatus
+import com.example.smarttransport.utils.AppManger
+import com.example.smarttransport.utils.myToast
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import retrofit2.Response
@@ -101,15 +101,15 @@ abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel> : Fragment()
 
     fun toggleLoadingDialog(show: Boolean) {
 
-        if (dialog == null) {
-            dialog = AlertDialog.Builder(requireContext())
-                .setView(R.layout.progress)
-                .setCancelable(false)
-                .create()
-
-            dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-        }
+//        if (dialog == null) {
+//            dialog = AlertDialog.Builder(requireContext())
+//                .setView(R.layout.progress)
+//                .setCancelable(false)
+//                .create()
+//
+//            dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
+//
+//        }
 
         if (!show)
             dialog?.dismiss()

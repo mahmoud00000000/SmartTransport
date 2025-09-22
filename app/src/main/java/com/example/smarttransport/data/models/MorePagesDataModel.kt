@@ -1,4 +1,4 @@
-package com.example.groovyshopping.data.models
+package com.example.smarttransport.data.models
 
 import android.graphics.drawable.Drawable
 import androidx.annotation.DrawableRes

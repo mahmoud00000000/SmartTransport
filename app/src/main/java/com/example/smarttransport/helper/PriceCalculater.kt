@@ -1,4 +1,4 @@
-package com.example.groovyshopping.helper
+package com.example.smarttransport.helper
 
 fun Float?.getProductPrice(price: Float): Float{
     //this --> Percentage

@@ -1,4 +1,4 @@
-package com.homecookapp.user.utils
+package com.example.smarttransport.utils
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -42,7 +42,7 @@ import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
-import com.example.groovyshopping.R
+import com.homecookapp.user.R
 import com.squareup.picasso.BuildConfig
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

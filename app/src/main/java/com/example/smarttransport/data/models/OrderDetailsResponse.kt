@@ -1,7 +1,7 @@
-package com.example.groovyshopping.user.data.models
+package com.example.smarttransport.user.data.models
 
-import com.example.groovyshopping.data.models.Payment_status_data
-import com.example.groovyshopping.data.models.Status_data
+import com.example.smarttransport.data.models.Payment_status_data
+import com.example.smarttransport.data.models.Status_data
 import com.google.android.gms.wallet.WalletConstants
 import com.google.gson.annotations.SerializedName
 

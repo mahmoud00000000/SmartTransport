@@ -1,10 +1,10 @@
-package com.homecookapp.user.utils
+package com.example.smarttransport.utils
 
 import android.content.SharedPreferences
 import com.google.gson.Gson
-import com.example.groovyshopping.user.data.models.AddressResponse
-import com.example.groovyshopping.user.data.models.CountryDataModel
-import com.example.groovyshopping.user.data.models.UserDataModel
+import com.example.smarttransport.user.data.models.AddressResponse
+import com.example.smarttransport.user.data.models.CountryDataModel
+import com.example.smarttransport.user.data.models.UserDataModel
 
 
 class AppManger constructor(var sharedPreferences: SharedPreferences) {
@@ -65,14 +65,14 @@ class AppManger constructor(var sharedPreferences: SharedPreferences) {
         }
     }
 
-    fun saveSetting(loginData: com.example.groovyshopping.user.data.remote.DefaultData) {
+    fun saveSetting(loginData: com.example.smarttransport.user.data.remote.DefaultData) {
         sharedPreferences.edit().putString(SETTING, Gson().toJson(loginData)).apply()
     }
 
-    fun getSetting(): com.example.groovyshopping.user.data.remote.DefaultData? {
+    fun getSetting(): com.example.smarttransport.user.data.remote.DefaultData? {
         val user = sharedPreferences.getString(SETTING, "")
         return user?.let {
-            Gson().fromJson(user, com.example.groovyshopping.user.data.remote.DefaultData::class.java)
+            Gson().fromJson(user, com.example.smarttransport.user.data.remote.DefaultData::class.java)
         }
     }
 

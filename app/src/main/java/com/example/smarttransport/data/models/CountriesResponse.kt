@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.data.models
+package com.example.smarttransport.user.data.models
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

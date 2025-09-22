@@ -1,4 +1,4 @@
-package com.example.groovyshopping.utils
+package com.example.smarttransport.utils
 
 sealed class RegisterValidation(){
     object Success: RegisterValidation()

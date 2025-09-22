@@ -1,10 +1,10 @@
-package com.example.groovyshopping.utils.permission
+package com.example.smarttransport.utils.permission
 
 import android.Manifest
 import android.os.Build
 import androidx.fragment.app.Fragment
-import com.homecookapp.user.utils.Constants
-import com.homecookapp.user.utils.permission.HasPermission
+import com.example.smarttransport.utils.Constants
+import com.example.smarttransport.utils.permission.HasPermission
 import pub.devrel.easypermissions.EasyPermissions
 
 object RequestPermission {

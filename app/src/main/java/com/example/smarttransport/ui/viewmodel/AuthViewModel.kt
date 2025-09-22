@@ -3,15 +3,14 @@ package com.example.smarttransport.ui.viewmodel
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.groovyshopping.base.BaseViewModel
+import com.example.smarttransport.base.BaseViewModel
 //import com.google.firebase.auth.FirebaseAuth
 //import com.google.firebase.firestore.FirebaseFirestore
-import com.example.groovyshopping.data.Product
-import com.example.groovyshopping.user.data.models.UserDataModel
-import com.example.groovyshopping.user.data.remote.networkHandling.Resource
-import com.homecookapp.user.utils.AppManger
-import com.example.groovyshopping.data.CartProduct
-import com.example.groovyshopping.user.data.reporsitory.MainRepository
+import com.example.smarttransport.user.data.models.UserDataModel
+import com.example.smarttransport.user.data.remote.networkHandling.Resource
+import com.example.smarttransport.user.data.reporsitory.MainRepository
+import com.example.smarttransport.utils.AppManger
+
 import com.google.android.gms.tasks.Task
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

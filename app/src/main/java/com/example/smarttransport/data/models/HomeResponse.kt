@@ -1,9 +1,9 @@
-package com.example.groovyshopping.user.data.models
+package com.example.smarttransport.user.data.models
 
 import com.google.gson.annotations.SerializedName
-import com.example.groovyshopping.user.data.models.OfferDataList
-import com.example.groovyshopping.user.data.models.StoreDataModel
-import com.example.groovyshopping.user.data.models.UserDataModel
+import com.example.smarttransport.user.data.models.OfferDataList
+import com.example.smarttransport.user.data.models.StoreDataModel
+import com.example.smarttransport.user.data.models.UserDataModel
 
 data class HomeResponse(
     var code: Int? = 0,

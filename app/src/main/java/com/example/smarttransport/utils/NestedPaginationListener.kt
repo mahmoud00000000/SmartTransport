@@ -1,4 +1,4 @@
-package com.homecookapp.user.utils
+package com.example.smarttransport.utils
 
 import android.util.Log
 import android.view.ViewGroup

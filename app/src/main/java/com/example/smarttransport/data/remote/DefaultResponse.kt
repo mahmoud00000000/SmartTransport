@@ -1,4 +1,4 @@
-package com.example.groovyshopping.user.data.remote
+package com.example.smarttransport.user.data.remote
 
 data class DefaultResponse<T>(
     var code: Int,

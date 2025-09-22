@@ -1,7 +1,7 @@
-package com.example.groovyshopping.user.data.remote
+package com.example.smarttransport.user.data.remote
 
 
-import com.example.groovyshopping.user.data.models.TransactionDataModel
+import com.example.smarttransport.user.data.models.TransactionDataModel
 import com.google.gson.annotations.SerializedName
 
 

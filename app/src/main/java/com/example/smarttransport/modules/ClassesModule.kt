@@ -1,7 +1,7 @@
-package com.example.groovyshopping.di.modules
+package com.example.smarttransport.di.modules
 
-import com.example.groovyshopping.user.data.reporsitory.MainRepository
-import com.homecookapp.user.utils.AppManger
+import com.example.smarttransport.user.data.reporsitory.MainRepository
+import com.example.smarttransport.utils.AppManger
 import org.koin.dsl.module
 
 val classesModule = module {

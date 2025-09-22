@@ -1,4 +1,4 @@
-package com.homecookapp.user.utils
+package com.example.smarttransport.utils
 
 import android.content.res.ColorStateList
 import android.content.res.Resources
@@ -21,7 +21,7 @@ import com.google.android.material.textfield.TextInputLayout
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
-import com.example.groovyshopping.R
+import com.homecookapp.user.R
 import android.graphics.BitmapFactory
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
@@ -36,7 +36,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.widget.TextViewCompat
 import com.bumptech.glide.Glide
-import com.example.groovyshopping.user.application.Application
+import com.example.smarttransport.user.application.Application
 import java.io.File
 
 object BindingAdapters {
