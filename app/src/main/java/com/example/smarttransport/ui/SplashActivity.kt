@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.example.smarttransport.base.BaseActivity
 import com.example.smarttransport.ui.activities.HomeActivity
+import com.example.smarttransport.ui.activities.LoginActivity
+import com.example.smarttransport.ui.activities.LoginRegisterActivity
 //import com.example.smarttransport.ui.activities.LoginActivity
 import com.example.smarttransport.ui.viewmodel.AuthViewModel
 import com.example.smarttransport.ui.viewmodel.SplashViewModel
@@ -20,14 +22,14 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {
     override fun setUI(savedInstanceState: Bundle?) {
         window.navigationBarColor = ContextCompat.getColor(this, R.color.black)
         window.statusBarColor = ContextCompat.getColor(this, R.color.black)
-//        viewModel.decideNextScreen { isLoggedIn ->
-//            if (isLoggedIn) {
-//                openActivity(HomeActivity::class.java)
-//            } else {
-//              openActivity(LoginActivity::class.java)
-//            }
-//            finish()
-//        }
+        viewModel.decideNextScreen { isLoggedIn ->
+            if (isLoggedIn) {
+                openActivity(HomeActivity::class.java)
+            } else {
+              openActivity(LoginRegisterActivity::class.java)
+            }
+            finish()
+        }
     }
 
     override fun observer() {}

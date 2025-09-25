@@ -23,6 +23,21 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.example.smarttransport.ui.activities.LoginRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.smarttransport.ui.activities.LoginActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.smarttransport.ui.activities.RegisterActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.smarttransport.ui.activities.HomeActivity"
+            android:exported="true" />
+
     </application>
 </manifest>
 

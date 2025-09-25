@@ -9,7 +9,7 @@
 
     <style name="h2">
         <item name="android:fontFamily">@font/poppins_light</item>
-        <item name="android:textColor">@color/g_gray700</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/h2TextSize</item>
     </style>
 
@@ -20,7 +20,7 @@
     </style>
 
     <style name="blueButtonStyle">
-        <item name="android:background">@drawable/blue_background</item>
+        <item name="android:background">@drawable/common_btn_bg</item>
         <item name="android:fontFamily">@font/poppins_thin</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/h2TextSize</item>
